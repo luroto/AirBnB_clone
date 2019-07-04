@@ -121,7 +121,7 @@ class HBNBCommand(cmd.Cmd):
                     if arg[0] in key:
                         aux.append(str(value))
                 print(aux)
- 
+
     def do_update(self, arg):
         """
         Updates attributes of a given class.
@@ -161,7 +161,7 @@ class HBNBCommand(cmd.Cmd):
                     value = arg[3]
             setattr(content[llave], arg[2], value)
             saving
-            
+
     def default(self, arg):
         """
         This function handles command line arguments
