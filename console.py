@@ -121,7 +121,7 @@ class HBNBCommand(cmd.Cmd):
                     if arg[0] in key:
                         aux.append(str(value))
                 print(aux)
-
+ 
     def do_update(self, arg):
         """
         Updates attributes of a given class.
