@@ -162,7 +162,7 @@ class HBNBCommand(cmd.Cmd):
             setattr(content[llave], arg[2], value)
             saving
             
- def default(self, arg):
+    def default(self, arg):
         """
         This function handles command line arguments
         """
