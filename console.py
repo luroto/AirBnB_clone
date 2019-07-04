@@ -161,5 +161,20 @@ class HBNBCommand(cmd.Cmd):
                     value = arg[3]
             setattr(content[llave], arg[2], value)
             saving
+            
+ def default(self, arg):
+        """
+        This function handles command line arguments
+        """
+        arg = arg.split(".")
+        if len(arg) > 1:
+            if "all()" == arg[1]:
+                self.do_all(arg[0])
+            if "count()" == arg[1]:
+                itera = 0
+                for key, value in content.items():
+                    if arg[0] in key:
+                        itera += 1
+                print(itera)
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
