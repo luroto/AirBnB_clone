@@ -4,7 +4,8 @@
 from models.base_model import BaseModel
 
 
-def Review(BaseModel):
+class Review(BaseModel):
+    ''' class Review to check the object '''
     place_id = ""
     user_id = ""
     text = ""
